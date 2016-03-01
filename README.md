@@ -62,7 +62,7 @@ public class SomeActivity extends Activity {
 }
 ```
 
-Cool, isn't it?
+Cool, isn't it?  Feel free to read the [Javadoc](https://jitpack.io/com/github/taky/maybe/-SNAPSHOT/javadoc/).
 
 ## Download
 
