@@ -152,8 +152,8 @@ public class Maybe<T> {
      * @return List of non-null values
      */
     @NonNull
-    public static <T> List<T> mapMaybes(final Mapper<T> mapper, final List<Maybe<T>> l) {
-        final List<T> o = new LinkedList<T>();
+    public static <T, U> List<U> mapMaybes(final Mapper<T, U> mapper, final List<Maybe<T>> l) {
+        final List<U> o = new LinkedList<U>();
         final Continuation1<T> adder = new Continuation1<T>() {
             @Override
             public void run(T e) {
@@ -187,8 +187,8 @@ public class Maybe<T> {
     /**
      * Mapper.
      */
-    public interface Mapper<T> {
-        Maybe<T> mapped(T o);
+    public interface Mapper<T, U> {
+        Maybe<U> mapped(T o);
     }
 
     /**
