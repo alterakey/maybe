@@ -10,13 +10,13 @@ Hence, **maybe**.
 
 ## Concept
 
-**maybe** is an immutable value wrapper class that works similar to Optional.  It wraps one value and perform nullity checks upon usage.  Throws the Maybe.Nothing exception upon null is detected when an non-null value is expected.  The Maybe.Nothing exception is a checked exception so that you cannot forget handling it.
+**maybe** is an immutable value wrapper class that works similar to Optional.  It wraps one value and perform nullity checks upon usage.  If a null value is detected upon a non-null value is expected, the Maybe.Nothing exception will be thrown.  The Maybe.Nothing exception is a checked exception so that you cannot forget handling it.
 
 ## Quickstart
 
-First of first please import the class:
+First import the class:
 
-```
+```java
 import com.gmail.altakey.maybe.Maybe;
 ```
 
