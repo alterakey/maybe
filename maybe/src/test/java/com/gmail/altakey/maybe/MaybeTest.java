@@ -30,6 +30,18 @@ public class MaybeTest {
     }
 
     @Test
+    public void testFromNothingWithTypeSafety() {
+        final Maybe<Integer> t = Maybe.fromNothing();
+        assertTrue(t != null);
+    }
+
+    @Test
+    public void testFromNothingWithTypeSafety2() {
+        final Maybe<String> t = Maybe.fromNothing(String.class);
+        assertTrue(t != null);
+    }
+
+    @Test
     public void testIsJust() {
         assertTrue(Maybe.of("test").isJust());
         assertFalse(Maybe.of(null).isJust());
@@ -106,7 +118,7 @@ public class MaybeTest {
                 new Maybe.Mapper<Integer, Integer>() {
                     @Override
                     public Maybe<Integer> mapped(Integer x) {
-                        return (x % 2 == 0) ? Maybe.of(x) : Maybe.of((Integer)null);
+                        return (x % 2 == 0) ? Maybe.of(x) : Maybe.fromNothing(Integer.class);
                     }
                 },
                 Arrays.asList(Maybe.of(1), Maybe.of(2), Maybe.of((Integer)null), Maybe.of(4))

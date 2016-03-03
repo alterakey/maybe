@@ -58,6 +58,11 @@ public class Maybe<T> {
         return new Maybe<T>(null);
     }
 
+    @NonNull
+    public static <T> Maybe<T> fromNothing(Class<T> clazz) {
+        return new Maybe<T>(null);
+    }
+
     /**
      * Returns the value if it is not a null.  Throws Maybe.Nothing otherwise.
      * 
