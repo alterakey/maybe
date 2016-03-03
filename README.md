@@ -79,7 +79,7 @@ Cool, isn't it?  Feel free to read the [Javadoc](https://jitpack.io/com/github/t
 
 ## Download
 
-**maybe** uses https://jitpack.io for packaging.
+**maybe** uses [jitpack.io](https://jitpack.io) for packaging.
 
 jitpack.io requires you to setup their repository first, then specify dependency.  Hence in Maven:
 
