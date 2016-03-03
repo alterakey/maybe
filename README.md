@@ -1,4 +1,5 @@
 # maybe: Maybe-like wrapper for Android
+![travis](https://travis-ci.org/taky/maybe.svg)
 
 One approach for eliminating null checks.
 
