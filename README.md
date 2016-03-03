@@ -2,7 +2,17 @@
 
 One approach for eliminating null checks.
 
-Null checks are important source of bugs because they are error-prone.  They are error-prone because they are entirely optional.  Programmers are not only free to silently return nulls for one reason or another, but also free (well, _tend_) to forget null checks.
+Null checks are "if" statements testing values for the null conditions.  For example:
+
+```java
+if (x != null) {
+    // success
+} else {
+    // failure (ugh)
+}
+```
+
+Null checks are an important source of bugs because they are error-prone.  They are error-prone because they are entirely optional.  Programmers are not only free to silently return nulls for one reason or another, but also free (well, _tend_) to forget null checks.
 
 **Optional** is a class that intends to address the problem.  It is available under Java 8 or better.  Unfortunately Android does _not_ support Java 8 _yet_.
 
@@ -11,6 +21,8 @@ Hence, **maybe**.
 ## Concept
 
 **maybe** is an immutable value wrapper class that works similar to Optional.  It wraps one value and perform nullity checks upon usage.  If a null value is detected upon a non-null value is expected, the Maybe.Nothing exception will be thrown.  The Maybe.Nothing exception is a checked exception so that you cannot forget handling it.
+
+**maybe** is modelled after the Data.Maybe in Haskell.
 
 ## Quickstart
 
