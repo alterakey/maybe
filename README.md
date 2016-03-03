@@ -75,7 +75,7 @@ public class SomeActivity extends Activity {
 }
 ```
 
-Cool, isn't it?  Feel free to read the [Javadoc](https://jitpack.io/com/github/taky/maybe/-SNAPSHOT/javadoc/).
+Cool, isn't it?  Feel free to read the [Javadoc](https://jitpack.io/com/github/taky/maybe/1.0/javadoc/).
 
 ## Download
 
@@ -107,10 +107,10 @@ allprojects {
         }
 }
 ```
-and 
+and
 ```
 dependencies {
-        compile 'com.github.taky:maybe:-SNAPSHOT'
+        compile 'com.github.taky:maybe:1.0'
 }
 ```
 
