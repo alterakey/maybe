@@ -90,11 +90,11 @@ jitpack.io requires you to setup their repository first, then specify dependency
     <url>https://jitpack.io</url>
   </repository>
 </repositories>
-  
+
 <dependency>
   <groupId>com.github.taky</groupId>
   <artifactId>maybe</artifactId>
-  <version>-SNAPSHOT</version>
+  <version>1.0</version>
 </dependency>
 ```
 
